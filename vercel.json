@@ -12,5 +12,12 @@
             "dest": "/",
             "methods": ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"]
         }
+    ],
+    "rewrites": [
+          {
+            "source": "/__/auth/(.*)",
+            "destination": "https://redseat.firebaseapp.com/__/auth/$1"
+          }
     ]
+
 }
